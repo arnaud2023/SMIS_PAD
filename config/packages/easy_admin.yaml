@@ -1,0 +1,6 @@
+easy_admin:
+
+    entities:
+        # List the entities you want to manage
+        User:
+            class: App\Entity\User
