@@ -40,6 +40,21 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $fonction = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $noms = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $prenoms = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $nom_utilisateur = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $matricule = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $service = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -134,6 +149,66 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setFonction(?string $fonction): static
     {
         $this->fonction = $fonction;
+
+        return $this;
+    }
+
+    public function getNoms(): ?string
+    {
+        return $this->noms;
+    }
+
+    public function setNoms(string $noms): static
+    {
+        $this->noms = $noms;
+
+        return $this;
+    }
+
+    public function getPrenoms(): ?string
+    {
+        return $this->prenoms;
+    }
+
+    public function setPrenoms(?string $prenoms): static
+    {
+        $this->prenoms = $prenoms;
+
+        return $this;
+    }
+
+    public function getNomUtilisateur(): ?string
+    {
+        return $this->nom_utilisateur;
+    }
+
+    public function setNomUtilisateur(string $nom_utilisateur): static
+    {
+        $this->nom_utilisateur = $nom_utilisateur;
+
+        return $this;
+    }
+
+    public function getMatricule(): ?string
+    {
+        return $this->matricule;
+    }
+
+    public function setMatricule(?string $matricule): static
+    {
+        $this->matricule = $matricule;
+
+        return $this;
+    }
+
+    public function getService(): ?string
+    {
+        return $this->service;
+    }
+
+    public function setService(?string $service): static
+    {
+        $this->service = $service;
 
         return $this;
     }

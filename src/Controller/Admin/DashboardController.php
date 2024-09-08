@@ -52,7 +52,7 @@ class DashboardController extends AbstractDashboardController
         yield  MenuItem::linkToCrud('Equipement', 'fa fa-window-maximize', Equipement::class);
         yield  MenuItem::linkToCrud('Intervention', 'fa fa-cog', Intervention::class);
         yield  MenuItem::linkToCrud('Technicien', 'fa fa-cog', Technicien::class);
-        yield  MenuItem::linkToCrud('Utilisateur', 'fa fa-person', Utilisateur::class);
+        // yield  MenuItem::linkToCrud('Utilisateur', 'fa fa-person', Utilisateur::class);
 
          
     }

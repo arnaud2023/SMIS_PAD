@@ -26,6 +26,7 @@
         "symfony/framework-bundle": "7.1.*",
         "symfony/http-client": "7.1.*",
         "symfony/intl": "7.1.*",
+        "symfony/ldap": "7.1.*",
         "symfony/mailer": "7.1.*",
         "symfony/mercure-bundle": "^0.3.9",
         "symfony/mime": "7.1.*",
@@ -44,7 +45,7 @@
         "symfony/ux-turbo": "^2.19",
         "symfony/validator": "7.1.*",
         "symfony/web-link": "7.1.*",
-        "symfony/webpack-encore-bundle": "*",
+        "symfony/webpack-encore-bundle": "^2.1",
         "symfony/yaml": "7.1.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
