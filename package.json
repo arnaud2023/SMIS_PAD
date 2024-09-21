@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "admin-lte": "3.2",
-    "express": "^4.19.2"
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
     "husky": "^9.1.5"
